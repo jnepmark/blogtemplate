@@ -88,7 +88,8 @@ input[type=text] {
     border: none;
   }
   .icons_column2{
-    height: 30px;
+    height: 20px;
+    width: 20px;
 
 }
 
@@ -171,7 +172,7 @@ input[type=text] {
 }
 .mainhead{
         font-weight: 900;
-        font-size: 10vw;
+        font-size: 8vw;
         display: flex;
         align-content: center;
         align-items: center;
@@ -180,10 +181,46 @@ input[type=text] {
 
 }
 .topnavbar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
         overflow: hidden;
         background-color: none !important;
-      }
+
       
+
+    
+      }
+
+      .search{
+        position: relative;
+        box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+          
+        }
+      
+      .cell{
+         
+        border: 1px solid black;
+        color: black;
+        height: 60px;
+        text-align: center;
+        padding-top:20px;
+        width: 200px;
+        
+        & a{
+          text-decoration: none;
+          color:black;
+      
+
+        }
+        
+        
+      }
+
       /* Style the links inside the navigation bar */
       .topnavbar a {
         float: left;
@@ -194,7 +231,7 @@ input[type=text] {
         padding: 15px 20px;
         text-decoration: none;
         font-size: 17px;
-        border: 1px solid black;
+      
         padding: 10px 20px; 
       }
 
@@ -268,23 +305,25 @@ input[type=text] {
      
 
       .featured img{
-       width: 900px ;
-       height: 528.75px;
-       background-size: cover;
-       background-repeat: no-repeat;
-       background-position: center;
-      }
-
+        width: 900px ;
+        height: 528.75px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+       }
+ 
+     
       .cardcontainer {
         display: flex;
-        border: 10px;
-        margin-left: 10%;
-        margin-right:30%;
+    
+        width: 930px;
+        margin: auto;
+
+  
         padding-inline: 10px;
         box-sizing: 800px;
         border-width: auto;
-        /*border: solid;*/
-       
+      
 
       }
       
@@ -326,6 +365,9 @@ input[type=text] {
 
 }
       
+.subscribecontainer{
+  margin-left: 10px;
+}
       
       .dontmisspost {
         text-align: center;

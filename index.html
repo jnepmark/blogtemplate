@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   </head>
@@ -19,38 +20,78 @@
     <div class="containerpage1">
       <div class="header">
           <span class="smallheader">
-              <p>EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</p>
+              <p style="letter-spacing: 8px;">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</p>
           </span>
       </div>
       <div class="mainhead">
           <h>Train of Thought</h>
       </div>
-      <div class="topnavbar ">
-          <a class="active" href="#Home">Home</a>
-          <a href="#About">About</a>
-          <a href="#Contact">Contact</a>
-          <a href="#My Blog">My Blog</a>
-          <input type="text" placeholder="Search..">
-          <div class="socialmedias" style="margin-left: 35%; margin-right:35% ;">
-            <icon style="display: flex; flex-direction: row; gap: 30px;" >
-              <img class="icons_column2" src="images/facebook.png" alt="">
-              <img class="icons_column2"src="images/instagram.png" alt="">
-              <img class="icons_column2"src="images/twiter.png" alt="">
-              <img class="icons_column2"src="images/pinterest.png"alt="">
-            </icon>
+      <div class="row" style="width: 100%;padding-left: 30px; padding-right: 20px;">
+        <div class="col-2" style="border-top:1px solid black; border-bottom: 1px solid black;"></div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-2 cell">
+              <a class="active" href="#Home">Home</a>
+            </div>
+            <div class="col-2 cell">
+              <a href="#About">About</a>
+            </div>
+            <div class="col-2 cell">
+              <a href="#Contact">Contact</a>
+            </div>
+            <div class="col-2 cell">
+              <a href="#My Blog">My Blog</a>
+            </div>
+            <div class="col-2 cell" style="padding-top: 0px;">
+              <div class="search">
+             
+              <input  type="text" class="w-100 " style="border:none" placeholder="Search..">
+              </div>
+            
+              
+            </div>
+            <div class="col-2 cell">
+              <div class="socialmedias">
+                <icon style="display: flex; flex-direction: row; gap: 20px;" >
+                  <img class="icons_column2" src="images/facebook.png" alt="">
+                  <img class="icons_column2"src="images/instagram.png" alt="">
+                  <img class="icons_column2"src="images/twiter.png" alt="">
+                  <img class="icons_column2"src="images/pinterest.png"alt="">
+                </icon>
+              </div>
+            </div>
+
           </div>
+        </div>
+        <div class="col-2" style="border-top:1px solid black; border-bottom: 1px solid black;"></div>
+        
+        
+       
+      </div>
+      <div class="topnavbar">
+        
+    
+        
+         
+          
+         
+       
+         
         </div>
 
   </div>
   <div class="cardcontainer">
       <div class="cardpost">
-          <h3 style="padding-left: 50px; padding-right: 50px;" >FEATURED POST</h3>
-          <a href=""> <img class="featured" src="images/blogreadbook.png" alt=""></a>
+          <h3 style="padding-left: 30px; padding-right: 30px;letter-spacing: 5px; padding-top: 5px;" >FEATURED POST</h3>
+          <a class="featured" href=""> <img  src="images/blogreadbook.png" alt=""></a>
             <Br></Br>
-          <p>March 23 &#8226; 2mins <BR></BR></p>
-          <h2><a class="fictionsection" href="">Back to Fiction: What I'm Reading This Summer </h2><br> 
-          <p class="blogpost">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
-            </a>
+            <div style="padding-left: 20px;">
+              <p>March 23 &#8226; 2mins <BR></BR></p>
+              <h2><a class="fictionsection" href="">Back to Fiction: What I'm Reading This Summer </h2><br> 
+              <p class="blogpost">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                </a>
+            </div>
+      
           
 
       </div>
@@ -75,10 +116,12 @@
                   <div  class="emailholder">
                    <label for="input_email" class="textemailinput__label">Enter your email
                   </label>
-               <input name="email" id="input_email" class="emailtext" type="email" placeholder="" required="" aria-required="true" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off" value="" aria-invalid="true">
+               <input name="email" id="input_email" class="emailtext form-control" type="email" placeholder="" required="" aria-required="true" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off" value="" aria-invalid="true">
                   </div>
               <div class="subscribecontainer" aria-disabled="false">
-                  <button aria-disabled="false" data-testid="buttonElement" class="subscr-button">
+                  <button aria-disabled="false" data-testid="buttonElement"
+                    class="btn btn-primary" 
+                >
                       <span class="subscribebutton__label">Subscribe</span>
                   </button>
               </div>
